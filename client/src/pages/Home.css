@@ -1,0 +1,22 @@
+.note {
+  background-color: #7eaa92;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.note p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 200;
+
+  padding-bottom: 10px;
+}
+h4 {
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 40%;
+}
