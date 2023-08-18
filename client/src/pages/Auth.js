@@ -5,8 +5,9 @@ import "./Auth.css";
 import Axios from "axios";
 
 const Auth = () => {
+  const [_, setCookies] = useCookies(["access_token"]); // eslint-disable-next-line
+
   const [isSignup, setIsSignup] = useState(false);
-  const [_, setCookies] = useCookies(["access_token"]);
   const navigate = useNavigate();
 
   const handleSwitch = () => {
