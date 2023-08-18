@@ -17,8 +17,8 @@ function Navbar() {
         <p>ToDO</p>
       </div>
       <div className="nav-container">
-        {/* <Link to="/">Home </Link>
-        <Link to="/about">About</Link> */}
+        <Link to="/note">Take Note </Link>
+        <Link to="/about">About</Link>
         {!cookie.access_token ? (
           <Link to="/auth">Login/Register</Link>
         ) : (

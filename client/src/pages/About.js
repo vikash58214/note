@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 
 const About = () => {
-  return <div>about</div>;
+  return <div>made with ❤️ by Vikash Sharma</div>;
 };
 
 export default About;

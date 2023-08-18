@@ -5,7 +5,7 @@ import "./Auth.css";
 import Axios from "axios";
 
 const Auth = () => {
-  const [isSignup, setIsSignup] = useState(true);
+  const [isSignup, setIsSignup] = useState(false);
   const [_, setCookies] = useCookies(["access_token"]);
   const navigate = useNavigate();
 
@@ -22,9 +22,13 @@ const Auth = () => {
           UserName,
           Password,
         });
-        alert("success");
-        setUsername("");
-        setPassword("");
+        if (reg.data.message === "user already exist") {
+          alert("user already exist");
+        } else {
+          alert("success");
+          setUsername("");
+          setPassword("");
+        }
       } catch (err) {
         console.log(err);
       }

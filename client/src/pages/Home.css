@@ -3,10 +3,13 @@
   box-sizing: border-box;
   border-radius: 5px;
   width: 20rem;
+  max-height: 7rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
   margin-top: 10px;
+  float: left;
 }
 
 .note p {
@@ -14,9 +17,42 @@
   font-weight: 200;
 
   padding-bottom: 10px;
+  padding-left: 10px;
 }
 h4 {
   padding: 0px;
   font-family: "Times New Roman", Times, serif;
   margin-left: 40%;
+}
+
+.vikash {
+  height: 1080px;
+  width: 100%;
+}
+
+.form-area {
+  float: left;
+  height: 300px;
+}
+.note-form {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 11px;
+}
+.note-form label {
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+.note-form button {
+  margin-top: 10px;
+  padding: 6px;
+  background-color: #afcdba;
+}
+.note-form textarea {
+  height: 10rem;
+}
+.note-form .button:hover {
+  background-color: #7eaa92;
 }

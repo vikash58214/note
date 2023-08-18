@@ -10,7 +10,11 @@ router.post("/note", async (req, res) => {
 });
 
 router.get("/getNotes/:id", async (req, res) => {
-  const resp = await noteModel.find({ user: req.params.id });
-  res.json(resp);
+  try {
+    const resp = await noteModel.find({ user: req.params.id });
+    res.json(resp);
+  } catch (err) {
+    console.log(err);
+  }
 });
 export { router as noteRouterr };

@@ -13,7 +13,7 @@ app.use(cors());
 app.use("/auth", userRouterr);
 app.use("/", noteRouterr);
 
-const DATABASE_URL = process.env.CONNECTION_URL;
+const DATABASE_URL = process.env.CONECTION_URL;
 mongoose.connect(DATABASE_URL);
 
 app.listen(3001, () => console.log("server is running"));
