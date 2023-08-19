@@ -31,6 +31,8 @@ const Home = () => {
           user: userID,
         });
         alert("success");
+        setTitle("");
+        setDescription("");
       } catch (err) {
         console.log(err);
       }
